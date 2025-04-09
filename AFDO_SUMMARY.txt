@@ -30,35 +30,35 @@ art::CodeInfo::CodeInfo(unsigned char const*, unsigned long*)
 art::CodeInfo::CodeInfo(unsigned char const*, unsigned long*)
 unsigned long art::mirror::Object::VisitRefsForCompaction<false, false, (art::VerifyObjectFlags)0, (art::ReadBarrierOption)2, art::gc::collector::MarkCompact::RefsUpdateVisitor<false, false, false>>(art::gc::collector::MarkCompact::RefsUpdateVisitor<false, false, false> const&, art::MemberOffset, art::MemberOffset)
 void art::gc::collector::MarkCompact::CompactPage<false>(art::mirror::Object*, unsigned int, unsigned char*, unsigned char*, bool)
+void art::ArtMethod::VisitRoots<(art::ReadBarrierOption)0, true, art::gc::collector::MarkCompact::RefFieldsVisitor const>(art::gc::collector::MarkCompact::RefFieldsVisitor const&, art::PointerSize)
 void art::gc::collector::MarkCompact::ScanObject<true>(art::mirror::Object*)
 void art::StackVisitor::WalkStack<(art::StackVisitor::CountTransitions)0>(bool)
-void art::ArtMethod::VisitRoots<(art::ReadBarrierOption)0, true, art::gc::collector::MarkCompact::RefFieldsVisitor const>(art::gc::collector::MarkCompact::RefFieldsVisitor const&, art::PointerSize)
+NterpGetMethod
 art::gc::collector::MarkCompact::VisitRoots(art::mirror::CompressedReference<art::mirror::Object>**, unsigned long, art::RootInfo const&)
 void art::gc::collector::MarkCompact::UpdateNonMovingPage<false>(art::mirror::Object*, unsigned char*, long, art::gc::accounting::SpaceBitmap<8ul>*)
-NterpGetMethod
+art::System_arraycopy(_JNIEnv*, _jclass*, _jobject*, int, _jobject*, int, int) (.__uniq.110717464938643750821353004938495288567)
 art::StringFactory_newStringFromUtf8Bytes(_JNIEnv*, _jclass*, _jbyteArray*, int, int) (.__uniq.69738951954755148529605360874931303746)
 void art::Monitor::Lock<(art::LockReason)1>(art::Thread*)
-art::gc::collector::MarkCompact::CompactionPhase()
-art::System_arraycopy(_JNIEnv*, _jclass*, _jobject*, int, _jobject*, int, int) (.__uniq.110717464938643750821353004938495288567)
+NterpGetInstanceFieldOffset
 
 
 sampling/libartbase_arm64.afdo
 ====
 OpenArchiveInternal(ZipArchive*, char const*) (.__uniq.167259607556841407834158900965132344175)
-std::__1::__murmur2_or_cityhash<unsigned long, 64ul>::operator()[abi:nn200000](void const*, unsigned long) const
 CdEntryMapZip32<ZipStringOffset20>::AddToMap(std::__1::basic_string_view<char, std::__1::char_traits<char>>, unsigned char const*)
+std::__1::__murmur2_or_cityhash<unsigned long, 64ul>::operator()[abi:nn200000](void const*, unsigned long) const
 art::MicroTime()
 art::ScopedArenaAllocator::~ScopedArenaAllocator()
 art::ScopedArenaAllocator::~ScopedArenaAllocator()
+art::NanoTime()
+art::ScopedArenaAllocator::ScopedArenaAllocator(art::ArenaStack*)
+art::ScopedArenaAllocator::ScopedArenaAllocator(art::ArenaStack*)
 art::BitVector::NumSetBits(unsigned int const*, unsigned int)
 art::InitLogging(char**, void (&)(char const*))::LogdLoggerLocked::operator()(android::base::LogId, android::base::LogSeverity, char const*, char const*, unsigned int, char const*) (.__uniq.85101241731209538599761260233789784808)
-art::NanoTime()
 art::ArenaAllocator::Contains(void const*) const
 art::SetThreadName(long, char const*)
-art::ScopedArenaAllocator::ScopedArenaAllocator(art::ArenaStack*)
-art::ScopedArenaAllocator::ScopedArenaAllocator(art::ArenaStack*)
-art::metrics::MetricsDeltaCounter<(art::metrics::DatumId)35, unsigned long>::Add(unsigned long)
 art::metrics::MetricsCounter<(art::metrics::DatumId)22, unsigned long>::Add(unsigned long)
+art::metrics::MetricsDeltaCounter<(art::metrics::DatumId)35, unsigned long>::Add(unsigned long)
 art::metrics::MetricsDeltaCounter<(art::metrics::DatumId)43, unsigned long>::Add(unsigned long)
 
 
