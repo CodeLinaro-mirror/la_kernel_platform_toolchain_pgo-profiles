@@ -11,6 +11,8 @@ AFDO_PROFILES += keystore2://toolchain/pgo-profiles/sampling:keystore2 \
 	libgui://toolchain/pgo-profiles/sampling:libgui \
 	libhidlbase://toolchain/pgo-profiles/sampling:libhidlbase \
 	libhwui://toolchain/pgo-profiles/sampling:libhwui \
+	libinput://toolchain/pgo-profiles/sampling:libinput \
+	libinputflinger://toolchain/pgo-profiles/sampling:libinputflinger \
 	libjpeg://toolchain/pgo-profiles/sampling:libjpeg \
 	liblog://toolchain/pgo-profiles/sampling:liblog \
 	libsensorservice://toolchain/pgo-profiles/sampling:libsensorservice \

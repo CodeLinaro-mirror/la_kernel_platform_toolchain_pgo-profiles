@@ -75,6 +75,16 @@ fdo_profile {
 }
 
 fdo_profile {
+    name: "libinput",
+    profile: "libinput.afdo",
+}
+
+fdo_profile {
+    name: "libinputflinger",
+    profile: "libinputflinger.afdo",
+}
+
+fdo_profile {
     name: "libjpeg",
     arch: {
         arm64: {
