@@ -131,7 +131,10 @@ fdo_profile {
 
 fdo_profile {
     name: "surfaceflinger",
-    profile: "surfaceflinger.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/surfaceflinger.afdo",
+    }),
 }
 
 fdo_profile {
