@@ -56,7 +56,10 @@ fdo_profile {
 
 fdo_profile {
     name: "libgui",
-    profile: "libgui.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libgui.afdo",
+    }),
 }
 
 fdo_profile {
@@ -106,12 +109,18 @@ fdo_profile {
 
 fdo_profile {
     name: "libui",
-    profile: "libui.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libui.afdo",
+    }),
 }
 
 fdo_profile {
     name: "libutils",
-    profile: "libutils.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libutils.afdo",
+    }),
     native_bridge_supported: true,
 }
 
