@@ -75,6 +75,16 @@ fdo_profile {
 }
 
 fdo_profile {
+    name: "libinput",
+    profile: "libinput.afdo",
+}
+
+fdo_profile {
+    name: "libinputflinger",
+    profile: "libinputflinger.afdo",
+}
+
+fdo_profile {
     name: "libjpeg",
     arch: {
         arm64: {
@@ -121,7 +131,10 @@ fdo_profile {
 
 fdo_profile {
     name: "surfaceflinger",
-    profile: "surfaceflinger.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/surfaceflinger.afdo",
+    }),
 }
 
 fdo_profile {
