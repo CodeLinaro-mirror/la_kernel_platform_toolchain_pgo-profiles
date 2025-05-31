@@ -130,6 +130,14 @@ fdo_profile {
 }
 
 fdo_profile {
+    name: "libminikin",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libminikin.afdo",
+    }),
+}
+
+fdo_profile {
     name: "libsensorservice",
     profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
         "": "",
