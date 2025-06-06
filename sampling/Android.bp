@@ -21,7 +21,10 @@ package {
 
 fdo_profile {
     name: "keystore2",
-    profile: "keystore2.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/keystore2.afdo",
+    }),
 }
 
 fdo_profile {
@@ -44,13 +47,19 @@ fdo_profile {
 
 fdo_profile {
     name: "libbinder",
-    profile: "libbinder.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libbinder.afdo",
+    }),
     native_bridge_supported: true,
 }
 
 fdo_profile {
     name: "libbinder_ndk",
-    profile: "libbinder_ndk.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libbinder_ndk.afdo",
+    }),
     native_bridge_supported: true,
 }
 
@@ -64,7 +73,10 @@ fdo_profile {
 
 fdo_profile {
     name: "libhidlbase",
-    profile: "libhidlbase.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libhidlbase.afdo",
+    }),
     native_bridge_supported: true,
 }
 
@@ -72,39 +84,65 @@ fdo_profile {
     name: "libhwui",
     arch: {
         arm64: {
-            profile: "libhwui_arm64.afdo",
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "": "",
+                any @ version: version + "/libhwui_arm64.afdo",
+            }),
         },
     },
 }
 
 fdo_profile {
     name: "libinput",
-    profile: "libinput.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libinput.afdo",
+    }),
 }
 
 fdo_profile {
     name: "libinputflinger",
-    profile: "libinputflinger.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libinputflinger.afdo",
+    }),
 }
 
 fdo_profile {
     name: "libjpeg",
     arch: {
         arm64: {
-            profile: "libjpeg_arm64.afdo",
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "": "",
+                any @ version: version + "/libjpeg_arm64.afdo",
+            }),
         },
     },
 }
 
 fdo_profile {
     name: "liblog",
-    profile: "liblog.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/liblog.afdo",
+    }),
     native_bridge_supported: true,
 }
 
 fdo_profile {
+    name: "libminikin",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libminikin.afdo",
+    }),
+}
+
+fdo_profile {
     name: "libsensorservice",
-    profile: "libsensorservice.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libsensorservice.afdo",
+    }),
 }
 
 fdo_profile {
@@ -128,14 +166,20 @@ fdo_profile {
     name: "linker",
     arch: {
         arm64: {
-            profile: "linker_arm64.afdo",
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "": "",
+                any @ version: version + "/linker_arm64.afdo",
+            }),
         },
     },
 }
 
 fdo_profile {
     name: "lmkd",
-    profile: "lmkd.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/lmkd.afdo",
+    }),
 }
 
 fdo_profile {
@@ -148,13 +192,19 @@ fdo_profile {
 
 fdo_profile {
     name: "libsqlite",
-    profile: "libsqlite.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libsqlite.afdo",
+    }),
     native_bridge_supported: true,
 }
 
 fdo_profile {
     name: "libcrypto",
-    profile: "libcrypto.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/libcrypto.afdo",
+    }),
     native_bridge_supported: true,
 }
 
@@ -163,12 +213,18 @@ fdo_profile {
     native_bridge_supported: true,
     arch: {
         arm64: {
-            profile: "libz_arm64.afdo",
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "": "",
+                any @ version: version + "/libz_arm64.afdo",
+            }),
         },
     },
 }
 
 fdo_profile {
     name: "server_configurable_flags",
-    profile: "server_configurable_flags.afdo",
+    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+        "": "",
+        any @ version: version + "/server_configurable_flags.afdo",
+    }),
 }
