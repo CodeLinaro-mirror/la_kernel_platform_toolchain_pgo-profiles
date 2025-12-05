@@ -3,6 +3,7 @@
 # AFDO_PROFILES is applied to all products while PRODUCT_AFDO_PROFILES, which is set
 # in a product config, has the ability to override it with custom profile
 AFDO_PROFILES += keystore2://toolchain/pgo-profiles/sampling:keystore2 \
+	libandroid_runtime://toolchain/pgo-profiles/sampling:libandroid_runtime \
 	libart://toolchain/pgo-profiles/sampling:libart \
 	libartbase://toolchain/pgo-profiles/sampling:libartbase \
 	libbinder://toolchain/pgo-profiles/sampling:libbinder \
