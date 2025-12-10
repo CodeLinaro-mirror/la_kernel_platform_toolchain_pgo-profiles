@@ -28,15 +28,6 @@ fdo_profile {
 }
 
 fdo_profile {
-    name: "libandroid_runtime",
-    profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
-        "": "",
-        any @ version: version + "/libandroid_runtime.afdo",
-    }),
-    native_bridge_supported: true,
-}
-
-fdo_profile {
     name: "libart",
     arch: {
         arm64: {
