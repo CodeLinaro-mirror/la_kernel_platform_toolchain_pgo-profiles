@@ -22,6 +22,8 @@ AFDO_PROFILES += keystore2://toolchain/pgo-profiles/sampling:keystore2 \
 	linker://toolchain/pgo-profiles/sampling:linker \
 	lmkd://toolchain/pgo-profiles/sampling:lmkd \
 	server_configurable_flags://toolchain/pgo-profiles/sampling:server_configurable_flags \
+	stable_cronet_components_cronet_android_cronet://toolchain/pgo-profiles/sampling:libhttpengine \
+	stable_cronet_libcrypto://toolchain/pgo-profiles/sampling:libcrypto_httpengine \
 	surfaceflinger://toolchain/pgo-profiles/sampling:surfaceflinger \
 	tot_cronet_components_cronet_android_cronet://toolchain/pgo-profiles/sampling:libhttpengine \
 	tot_cronet_libcrypto://toolchain/pgo-profiles/sampling:libcrypto_httpengine
