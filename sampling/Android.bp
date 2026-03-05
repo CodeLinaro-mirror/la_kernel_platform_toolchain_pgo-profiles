@@ -218,3 +218,28 @@ fdo_profile {
         any @ version: version + "/server_configurable_flags.afdo",
     }),
 }
+
+fdo_profile {
+    name: "libhttpengine",
+    arch: {
+        arm64: {
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "14743375-trunk": "libhttpengine_arm64.afdo",
+                any: "",
+            }),
+        },
+    },
+}
+
+fdo_profile {
+    name: "libcrypto_httpengine",
+    arch: {
+        arm64: {
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "14743375-trunk": "libcrypto_httpengine_arm64.afdo",
+                any: "",
+            }),
+        },
+    },
+}
+
