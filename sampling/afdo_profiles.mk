@@ -8,6 +8,7 @@ AFDO_PROFILES += keystore2://toolchain/pgo-profiles/sampling:keystore2 \
 	libartbase://toolchain/pgo-profiles/sampling:libartbase \
 	libbinder://toolchain/pgo-profiles/sampling:libbinder \
 	libbinder_ndk://toolchain/pgo-profiles/sampling:libbinder_ndk \
+	libc://toolchain/pgo-profiles/sampling:libc \
 	libcrypto://toolchain/pgo-profiles/sampling:libcrypto \
 	libgui://toolchain/pgo-profiles/sampling:libgui \
 	libhidlbase://toolchain/pgo-profiles/sampling:libhidlbase \
