@@ -170,7 +170,6 @@ fdo_profile {
             }),
         },
     },
-    incomplete_coverage: true,
     native_bridge_supported: true,
 }
 
