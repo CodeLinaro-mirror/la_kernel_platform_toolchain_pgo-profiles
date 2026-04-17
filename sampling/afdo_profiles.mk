@@ -8,6 +8,7 @@ AFDO_PROFILES += keystore2://toolchain/pgo-profiles/sampling:keystore2 \
 	libartbase://toolchain/pgo-profiles/sampling:libartbase \
 	libbinder://toolchain/pgo-profiles/sampling:libbinder \
 	libbinder_ndk://toolchain/pgo-profiles/sampling:libbinder_ndk \
+	libc://toolchain/pgo-profiles/sampling:libc \
 	libcrypto://toolchain/pgo-profiles/sampling:libcrypto \
 	libgui://toolchain/pgo-profiles/sampling:libgui \
 	libhidlbase://toolchain/pgo-profiles/sampling:libhidlbase \
@@ -22,6 +23,8 @@ AFDO_PROFILES += keystore2://toolchain/pgo-profiles/sampling:keystore2 \
 	linker://toolchain/pgo-profiles/sampling:linker \
 	lmkd://toolchain/pgo-profiles/sampling:lmkd \
 	server_configurable_flags://toolchain/pgo-profiles/sampling:server_configurable_flags \
+	stable_cronet_components_cronet_android_cronet://toolchain/pgo-profiles/sampling:libhttpengine \
+	stable_cronet_libcrypto://toolchain/pgo-profiles/sampling:libcrypto_httpengine \
 	surfaceflinger://toolchain/pgo-profiles/sampling:surfaceflinger \
 	tot_cronet_components_cronet_android_cronet://toolchain/pgo-profiles/sampling:libhttpengine \
 	tot_cronet_libcrypto://toolchain/pgo-profiles/sampling:libcrypto_httpengine

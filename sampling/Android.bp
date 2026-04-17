@@ -153,6 +153,27 @@ fdo_profile {
 }
 
 fdo_profile {
+    name: "libc",
+    arch: {
+        // Use bionic profiles cross-platform, even when they are
+        // collected only on arm64 devices. See go/lt-bionic-afdo-experiment.
+        x86: {
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "": "",
+                any @ version: version + "/bionic_libc_arm64.afdo",
+            }),
+        },
+        x86_64: {
+            profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
+                "": "",
+                any @ version: version + "/bionic_libc_arm64.afdo",
+            }),
+        },
+    },
+    native_bridge_supported: true,
+}
+
+fdo_profile {
     name: "linker",
     arch: {
         arm64: {
@@ -224,8 +245,8 @@ fdo_profile {
     arch: {
         arm64: {
             profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
-                "14743375-trunk": "libhttpengine_arm64.afdo",
-                any: "",
+                "": "",
+                any @ version: version + "/libhttpengine_arm64.afdo",
             }),
         },
     },
@@ -236,10 +257,9 @@ fdo_profile {
     arch: {
         arm64: {
             profile: select(release_flag("RELEASE_BUILD_AFDO_PROFILE_VERSION"), {
-                "14743375-trunk": "libcrypto_httpengine_arm64.afdo",
-                any: "",
+                "": "",
+                any @ version: version + "/libcrypto_httpengine_arm64.afdo",
             }),
         },
     },
 }
-
